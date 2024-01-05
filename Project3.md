@@ -20,13 +20,13 @@
 
 `curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -`
 
-![Location of node.js from Repo](./images/ubuntu-repo.png)
+![Location of node.js from Repo](./Images/ubuntu-repo.png)
 
 ### Installing node.js on the server
 
 `sudo apt-get install -y nodejs`
 
-![Installing node.js](./images/install-nodejs.png)
+![Installing node.js](./Images/install-nodejs.png)
 
 ## The command above installs both nodejs and npm.
 
@@ -36,7 +36,7 @@
 
 `npm -v`
 
-![Verifying node and npm installation](./images/node-npm.png)
+![Verifying node and npm installation](./Images/node-npm.png)
 
 ### Creating a new directory for to-do Project and confirming the directory
 
@@ -44,25 +44,25 @@
 
 `ls`
 
-![Creating and confirming to-do directory](./images/todo-confirm.png)
+![Creating and confirming to-do directory](./Images/todo-confirm.png)
 
 ### Changing Directory to Todo:
 
 `cd Todo`
 
-![Changing directory to Todo](./images/cd-todo.png)
+![Changing directory to Todo](./Images/cd-todo.png)
 
 ### Initializing Project by creating package.json file
 
 `npm init`
 
-![Initializing Project](./images/npm-init.png)
+![Initializing Project](./Images/npm-init.png)
 
 ### Running the ls command to confirm package.json file created
 
 `ls`
 
-![Confirming package.json](./images/ls-packagejson.png)
+![Confirming package.json](./Images/ls-packagejson.png)
 
 
 
@@ -71,31 +71,31 @@
 
 `npm install express`
 
-![Installing ExpressJs](./images/todo-npm-install-express.png)
+![Installing ExpressJs](./Images/todo-npm-install-express.png)
 
 ### creating a file index.js with command:
 
 `touch index.js`
 
-![Creating index file](./images/todo-touch-indexjs.png)
+![Creating index file](./Images/todo-touch-indexjs.png)
 
 ### Running 'ls' to confirm just created file in present working directory
 
 `ls`
 
-![Confirming index file](./images/ls-indexjs.png)
+![Confirming index file](./Images/ls-indexjs.png)
 
 ### Installing the dotenv module
 
 `npm install dotenv`
 
-![Installing dotenv](./images/install-dotnev.png)
+![Installing dotenv](./Images/install-dotnev.png)
 
 ### Opening the index file
 
 `vim index.js`
 
-![Opening index.js file](./images/vim-indexjs.png)
+![Opening index.js file](./Images/vim-indexjs.png)
 
 ### The code below was entered and saved into the file: 
 
@@ -124,17 +124,17 @@
 
 `node index.js`
 
-![Running port 5000](./images/running-port5000.png)
+![Running port 5000](./Images/running-port5000.png)
 
 ### Creating an inbound rule for port 5000
 
-![Inbound rule for port 5000](./images/inbound-5000.png)
+![Inbound rule for port 5000](./Images/inbound-5000.png)
 
 Opening browser and trying to access server’s Public IP followed by port 5000:
 
 `http://3.91.6.77:5000`
 
-![Public IP with port 5000](./images/welcome-to-express.png)
+![Public IP with port 5000](./Images/welcome-to-express.png)
 
 ### Routes
 
@@ -149,25 +149,25 @@ Opening browser and trying to access server’s Public IP followed by port 5000:
 
 `mkdir routes`
 
-![mkdir routes](./images/mkdir-routes.png)
+![mkdir routes](./Images/mkdir-routes.png)
 
 ### Changing directory to routes folder.
 
 `cd routes`
 
-![changing directory to routes](./images/cd-routes.png)
+![changing directory to routes](./Images/cd-routes.png)
 
 ### creating a file api.js with command below:
 
 `touch api.js`
 
-![creating api.js](./images/touch-api.png)
+![creating api.js](./Images/touch-api.png)
 
 ### Opening the file with:
 
 `vim api.js`
 
-![creating api.js](./images/vim-api.png)
+![creating api.js](./Images/vim-api.png)
 ### Code below was entered and saved:
 
 `const express = require ('express');`
@@ -195,34 +195,34 @@ Opening browser and trying to access server’s Public IP followed by port 5000:
 
 `npm install mongoose`
 
-![changing dir and installing mongoose](./images/cd-install-mongoose.png)
+![changing dir and installing mongoose](./Images/cd-install-mongoose.png)
 
 ### Creating new folder 'models'
 
 `mkdir models`
 
-![creating folder 'models'](./images/mkdirr-models.png)
+![creating folder 'models'](./Images/mkdirr-models.png)
 
 ### Changing directory into the newly created ‘models’ folder
 
 `cd models`
 
-![changing directory into folder 'models'](./images/cd-models.png)
+![changing directory into folder 'models'](./Images/cd-models.png)
 
 ### creating a file named todo.js inside models folder
 
 `touch todo.js`
 
-![creating todo.js](./images/touch-todojs.png)
+![creating todo.js](./Images/touch-todojs.png)
 
 # All three commands above can be defined in one line to be executed consequently with help of && operator, like this:
 
 `mkdir models && cd models && touch todo.js`
 ### Opening created file with `vim todo.js`, then inserting and saving the code below:
 
-![vim editing todo.js](./images/vim-todojs.png)
+![vim editing todo.js](./Images/vim-todojs.png)
 
-![code insertion and save](./images/vim-code.png)
+![code insertion and save](./Images/vim-code.png)
 
 `const mongoose = require('mongoose');`
 `const Schema = mongoose.Schema;`
@@ -244,11 +244,11 @@ Opening browser and trying to access server’s Public IP followed by port 5000:
 
 ### Changing directory to routes
 
-![changing directory to the routes folder](./images/cd-todo-routes.png)
+![changing directory to the routes folder](./Images/cd-todo-routes.png)
 
 ### In Routes directory, api.js will be opened with `vim api.js`, the code contained will be deleted with `:%d` command, then the code below will be entered and saved:
 
-![updating api.js file](./images/vim-apijs.png)
+![updating api.js file](./Images/vim-apijs.png)
 
 `const express = require ('express');`
 `const router = express.Router();`
@@ -287,19 +287,19 @@ In the index.js file, we specified process.env to access environment variables, 
 
 `cd Todo`
 
-![Changing directory to ToDo](./images/cd-to-do.png)
+![Changing directory to ToDo](./Images/cd-to-do.png)
 
 ### Creating a file in Todo directory and naming it .env. 
 
 `touch .env`
 
-![Creating .env file](./images/touch-env.png)
+![Creating .env file](./Images/touch-env.png)
 
 ### Using vi editor to open and edit the .env file
 
 `vi .env`
 
-![editing .env file](./images/vi-env.png)
+![editing .env file](./Images/vi-env.png)
 
 ### Adding and saving database connection string below to the .env file:
 
@@ -313,7 +313,7 @@ In the index.js file, we specified process.env to access environment variables, 
 
 `vim index.js`
 
-![editing index.js file](./images/vim-index.png)
+![editing index.js file](./Images/vim-index.png)
 
 `const express = require('express');`
 `const bodyParser = require('body-parser');`
@@ -356,21 +356,21 @@ In the index.js file, we specified process.env to access environment variables, 
 
 `node index.js`
 
-![updating api.js file](./images/databasse-connected-successfully.png)
+![updating api.js file](./Images/databasse-connected-successfully.png)
 
 ### opening Postman to create a POST request to the API `http://3.91.6.77:5000/api/todos`. This request sends a new task to our To-Do list so the application could store it in the database.
 
 ### Note: we set header key Content-Type as application/json
 ### Post request on Postman
-![Postman posts request](./images/post-postman.png)
+![Postman posts request](./Images/post-postman.png)
 
 ### Get request on Postman
 
-![Postman get request](./images/get-postman.png)
+![Postman get request](./Images/get-postman.png)
 
 ### Delete request on Postman
 
-![Postman delete request](./images/delete-request-postman.png)
+![Postman delete request](./Images/delete-request-postman.png)
 ### By now we have tested backend part of the To-Do application and have made sure that it supports all three operations wanted:
 
 ### 1. Display a list of tasks - HTTP GET request
@@ -381,18 +381,18 @@ In the index.js file, we specified process.env to access environment variables, 
 
 `npx create-react-app client`
 
-![Installing create-react-app](./images/install-npx.png)
+![Installing create-react-app](./Images/install-npx.png)
 
 ### Installing 'Concurrently' to run more than one command simultaneously from the same terminal window
 
 `npm install concurrently --save-dev`
 
-![Installing Concurrently](./images/install-concurrently.png)
+![Installing Concurrently](./Images/install-concurrently.png)
 ### Installing 'nodemon' to run and monitor the server. If there is any change in the server code, nodemon will restart it automatically and load the new changes.
 
 `npm install nodemon --save-dev`
 
-![Installing Nodemon](./images/install-nodemon.png)
+![Installing Nodemon](./Images/install-nodemon.png)
 
 ### In Todo folder we will open the package.json file, and update the file with the code below. 
 
@@ -406,41 +406,41 @@ In the index.js file, we specified process.env to access environment variables, 
 
 `cd Todo`
 
-![changing directory to Todo folder](./images/cd-todo2.png)
+![changing directory to Todo folder](./Images/cd-todo2.png)
 
 ### Opening package.json file in Todo directory and updating the code as stated above
 
 `vi package.json`
 
-![opening package.json file](./images/vi-todo.png)
+![opening package.json file](./Images/vi-todo.png)
 ### Change directory to ‘client’
 
 `cd client`
 
-![changing directory to Client folder](./images/cd-client.png)
+![changing directory to Client folder](./Images/cd-client.png)
 
 ### Opening the package.json file
 
 `vi package.json`
 
-![Opening package.json in client folder](./images/vi-client.png)
+![Opening package.json in client folder](./Images/vi-client.png)
 ### Adding the key value pair in the package.json file "proxy": "http://localhost:5000"
 
 
-![Adding key value pair](./images/proxy-client.png)
+![Adding key value pair](./Images/proxy-client.png)
 
 ### The purpose of adding the proxy configuration above is to make it possible to access the application directly from the browser by simply calling the server url like http://localhost:5000 rather than always including the entire path like http://localhost:5000/api/todos
 ### Inside the Todo directory, we run the following:
 
 `npm run dev`
 
-![npm run dev](./images/cd-todo3.png)
+![npm run dev](./Images/cd-todo3.png)
 
-![npm run dev](./images/todosuccess.png)
+![npm run dev](./Images/todosuccess.png)
 
 ### App open and running on localhost:3000
 
-![app running on localhost port 3000](./images/reactwebpagemmm1.png)
+![app running on localhost port 3000](./Images/reactwebpagemmm1.png)
 
 ### One of the advantages of react is that it makes use of components, which are reusable and also makes code modular. For the Todo app, there will be two stateful components and one stateless component.
 
@@ -448,37 +448,37 @@ In the index.js file, we specified process.env to access environment variables, 
 
 `cd client`
 
-![changing directory to client](./images/cd-client2.png)
+![changing directory to client](./Images/cd-client2.png)
 
 ### Then we move to the src directory
 
 `cd src`
 
-![changing directory to src](./images/cds.png)
+![changing directory to src](./Images/cds.png)
 
 ### Inside src folder, another folder called components is created
 
 `mkdir components`
 
-![making components directory](./images/components-dir.png)
+![making components directory](./Images/components-dir.png)
 
 ### Moving into the components directory:
 
 `cd components`
 
-![changing directory into components](./images/cd-components.png)
+![changing directory into components](./Images/cd-components.png)
 
 ### Inside ‘components’ directory three files are created namely: files Input.js, ListTodo.js and Todo.js
 
 `touch Input.js ListTodo.js Todo.js`
 
-![creating 3 files in the components directory](./images/three-files.png)
+![creating 3 files in the components directory](./Images/three-files.png)
 
 ### Input.js is opened using vi editor, and the following code is entered:
 
 `vi Input.js`
 
-![openingg Input.js file to input code below](./images/input-js.png)
+![openingg Input.js file to input code below](./Images/input-js.png)
 
 `import React, { Component } from 'react';`
 `import axios from 'axios';`
@@ -532,26 +532,26 @@ In the index.js file, we specified process.env to access environment variables, 
 
 `cd ~/Todo/client`
 
-![changing directory into client to install axios](./images/cd2.png)
+![changing directory into client to install axios](./Images/cd2.png)
 
 ### Installing Axios
 
 `npm install axios`
 
-![Installing Axios](./images/installing-axios.png)
+![Installing Axios](./Images/installing-axios.png)
 
 ## Frontend creation (contdd.)
 ### Changing directory into ‘components’
 
 `cd src/components`
 
-![cd into components dir](./images/cd-components2.png)
+![cd into components dir](./Images/cd-components2.png)
 
 #### opening ListTodo (using vi editor) and inputting the following code:
 
 `vi ListTodo.js`
 
-![opening ListTodo](./images/list-todo.png)
+![opening ListTodo](./Images/list-todo.png)
 
 `import React from 'react';`
 
@@ -584,7 +584,7 @@ In the index.js file, we specified process.env to access environment variables, 
 
 `vi Todo.js`
 
-![opening Todo.js](./images/todo-js.png)
+![opening Todo.js](./Images/todo-js.png)
 
 `import React, {Component} from 'react';`
 `import axios from 'axios';`
@@ -648,13 +648,13 @@ In the index.js file, we specified process.env to access environment variables, 
 
 `cd ~/Todo/client/src`
 
-![changing dir to src](./images/cd-src.png)
+![changing dir to src](./Images/cd-src.png)
 
 ### Opening App.js in the src folder to input the following code:
 
 `vi App.js`
 
-![Opening App.js](./images/app-js.png)
+![Opening App.js](./Images/app-js.png)
 
 `import React from 'react';`
 
@@ -675,7 +675,7 @@ In the index.js file, we specified process.env to access environment variables, 
 
 `vi App.css`
 
-![Opening App.css](./images/app-css.png)
+![Opening App.css](./Images/app-css.png)
 
 `.App {`
 `text-align: center;`
@@ -769,7 +769,7 @@ In the index.js file, we specified process.env to access environment variables, 
 
 `vim index.css`
 
-![Opening index.css](./images/index-css.png)
+![Opening index.css](./Images/index-css.png)
 
 `body {`
 `margin: 0;`
@@ -793,18 +793,18 @@ In the index.js file, we specified process.env to access environment variables, 
 
 `cd ~/Todo`
 
-![changing dir to Todo](./images/return-todo.png)
+![changing dir to Todo](./Images/return-todo.png)
 
 ### and running code:
 
 `npm run dev`
 
-![run dev in Todo](./images/run-dev.png)
+![run dev in Todo](./Images/run-dev.png)
 
-![run dev in Todo](./images/run-dev2.png)
+![run dev in Todo](./Images/run-dev2.png)
 
 ### To-Do app is ready and fully functional with the functionality : creating a task, deleting a task and viewing all your tasks.
 
-![Todo app ready with full functionality](./images/todo-ready.png)
+![Todo app ready with full functionality](./Images/todo-ready.png)
 
 # In this Project #3, a simple To-Do app was created and deployed to MERN stack, a frontend application was wwritten using React.js that communicates with a backend application written using Expressjs. A Mongodb backend was also created for storing tasks in a database.
