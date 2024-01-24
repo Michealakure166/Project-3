@@ -191,7 +191,6 @@ Opening browser and trying to access server’s Public IP followed by port 5000:
 
 ### Changing directory to /Todo/ and installing Mongoose
 
-`cd ~/Todo/`
 
 `npm install mongoose`
 
